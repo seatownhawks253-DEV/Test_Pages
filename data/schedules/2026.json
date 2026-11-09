@@ -1,0 +1,162 @@
+{
+  "season": 2026,
+  "games": [
+    {
+      "week": 1,
+      "opponent": "New England Patriots",
+      "opponentAbbr": "NE",
+      "kickoff": "2026-09-10T00:20:00Z",
+      "venue": "Lumen Field",
+      "isHome": true,
+      "result": "W 13-10"
+    },
+    {
+      "week": 2,
+      "opponent": "Arizona Cardinals",
+      "opponentAbbr": "ARI",
+      "kickoff": "2026-09-20T20:25:00Z",
+      "venue": "State Farm Stadium",
+      "isHome": false,
+      "result": "W 31-7"
+    },
+    {
+      "week": 3,
+      "opponent": "Washington Commanders",
+      "opponentAbbr": "WSH",
+      "kickoff": "2026-09-27T17:00:00Z",
+      "venue": "Northwest Stadium",
+      "isHome": false,
+      "result": null
+    },
+    {
+      "week": 4,
+      "opponent": "Los Angeles Chargers",
+      "opponentAbbr": "LAC",
+      "kickoff": "2026-10-04T20:25:00Z",
+      "venue": "Lumen Field",
+      "isHome": true,
+      "result": null
+    },
+    {
+      "week": 5,
+      "opponent": "San Francisco 49ers",
+      "opponentAbbr": "SF",
+      "kickoff": "2026-10-11T20:25:00Z",
+      "venue": "Lumen Field",
+      "isHome": true,
+      "result": null
+    },
+    {
+      "week": 6,
+      "opponent": "Denver Broncos",
+      "opponentAbbr": "DEN",
+      "kickoff": "2026-10-16T00:15:00Z",
+      "venue": "Empower Field at Mile High",
+      "isHome": false,
+      "result": null
+    },
+    {
+      "week": 7,
+      "opponent": "Kansas City Chiefs",
+      "opponentAbbr": "KC",
+      "kickoff": "2026-10-26T00:20:00Z",
+      "venue": "Lumen Field",
+      "isHome": true,
+      "result": null
+    },
+    {
+      "week": 8,
+      "opponent": "Chicago Bears",
+      "opponentAbbr": "CHI",
+      "kickoff": "2026-11-03T01:15:00Z",
+      "venue": "Lumen Field",
+      "isHome": true,
+      "result": null
+    },
+    {
+      "week": 9,
+      "opponent": "Arizona Cardinals",
+      "opponentAbbr": "ARI",
+      "kickoff": "2026-11-08T21:25:00Z",
+      "venue": "Lumen Field",
+      "isHome": true,
+      "result": null
+    },
+    {
+      "week": 10,
+      "opponent": "Las Vegas Raiders",
+      "opponentAbbr": "LV",
+      "kickoff": "2026-11-15T21:05:00Z",
+      "venue": "Allegiant Stadium",
+      "isHome": false,
+      "result": null
+    },
+    {
+      "week": 12,
+      "opponent": "San Francisco 49ers",
+      "opponentAbbr": "SF",
+      "kickoff": "2026-11-29T21:25:00Z",
+      "venue": "Levi's Stadium",
+      "isHome": false,
+      "result": null
+    },
+    {
+      "week": 13,
+      "opponent": "Dallas Cowboys",
+      "opponentAbbr": "DAL",
+      "kickoff": "2026-12-08T01:15:00Z",
+      "venue": "Lumen Field",
+      "isHome": true,
+      "result": null
+    },
+    {
+      "week": 14,
+      "opponent": "New York Giants",
+      "opponentAbbr": "NYG",
+      "kickoff": "2026-12-13T21:25:00Z",
+      "venue": "Lumen Field",
+      "isHome": true,
+      "result": null
+    },
+    {
+      "week": 15,
+      "opponent": "Philadelphia Eagles",
+      "opponentAbbr": "PHI",
+      "kickoff": "2026-12-19T22:00:00Z",
+      "venue": "Lincoln Financial Field",
+      "isHome": false,
+      "result": null
+    },
+    {
+      "week": 16,
+      "opponent": "Los Angeles Rams",
+      "opponentAbbr": "LAR",
+      "kickoff": "2026-12-26T01:15:00Z",
+      "venue": "Lumen Field",
+      "isHome": true,
+      "result": null
+    },
+    {
+      "week": 17,
+      "opponent": "Carolina Panthers",
+      "opponentAbbr": "CAR",
+      "kickoff": "2027-01-03T18:00:00Z",
+      "venue": "Bank of America Stadium",
+      "isHome": false,
+      "result": null
+    },
+    {
+      "week": 18,
+      "opponent": "Los Angeles Rams",
+      "opponentAbbr": "LAR",
+      "kickoff": "2027-01-10T05:00:00Z",
+      "venue": "SoFi Stadium",
+      "isHome": false,
+      "result": null
+    }
+  ],
+  "offseason": {
+    "message": "Season Complete • See you in September!",
+    "nextSeasonOpener": "2027-09-10T20:15:00Z"
+  }
+}

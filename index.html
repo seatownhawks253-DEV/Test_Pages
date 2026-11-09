@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07090d">
+  <meta name="description" content="NFL game day board with this week's matchups, division standings, and a Seahawks kickoff countdown.">
+  <title>NFL Game Day</title>
+  <link rel="icon" href="assets/seahawks-helmet.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=11">
+</head>
+<body>
+  <div class="field" aria-hidden="true"></div>
+  <div class="page">
+    <header class="topbar">
+      <div class="topbar-row">
+        <p class="wordmark">NFL Game Day</p>
+        <nav class="nav" aria-label="Sections">
+          <button type="button" data-view="nfl" class="is-selected" aria-pressed="true">NFL</button>
+          <button type="button" data-view="schedule" aria-pressed="false">Schedule</button>
+          <button type="button" data-view="standings" aria-pressed="false">Standings</button>
+          <button type="button" data-view="teams" aria-pressed="false">Teams</button>
+          <button type="button" data-view="projections" aria-pressed="false">Projections</button>
+        </nav>
+        <button class="refresh" id="refresh-button" type="button">Refresh</button>
+      </div>
+      <div class="week-nav" aria-label="Week">
+        <button type="button" id="prev-week">‹ Previous week</button>
+        <p id="week-chip">Week</p>
+        <button type="button" id="next-week">Next week ›</button>
+      </div>
+    </header>
+
+    <button type="button" id="live-banner" class="live-banner" hidden>
+      <span class="live-dot" aria-hidden="true"></span>
+      <strong>Live now</strong>
+      <span id="live-count"></span>
+    </button>
+
+    <main>
+      <section class="panel is-entering" data-panel="nfl" aria-labelledby="hero-title">
+        <header class="hero-copy">
+          <h1 id="hero-title">NFL Game Day</h1>
+          <p class="hero-week" id="hero-week">Week</p>
+        </header>
+
+        <article class="jumbo is-seattle" id="featured" aria-live="polite">
+          <p class="featured-flag">Featured Seahawks</p>
+          <div class="jumbo-teams" id="featured-teams"></div>
+          <p class="jumbo-when" id="featured-when"></p>
+          <div id="featured-clock"></div>
+        </article>
+
+        <section class="block" aria-labelledby="week-heading">
+          <div class="block-head">
+            <h2 id="week-heading">This week's games</h2>
+          </div>
+          <div class="week-board" id="week-board"></div>
+        </section>
+      </section>
+
+      <section class="panel" data-panel="schedule" hidden aria-labelledby="schedule-title">
+        <div class="block-head">
+          <div>
+            <h2 id="schedule-title">Seahawks schedule</h2>
+            <p class="subline" id="schedule-meta"></p>
+          </div>
+          <div class="filters" role="group" aria-label="Filter schedule">
+            <button type="button" data-filter="all" class="is-selected" aria-pressed="true">All</button>
+            <button type="button" data-filter="upcoming" aria-pressed="false">Upcoming</button>
+            <button type="button" data-filter="final" aria-pressed="false">Final</button>
+          </div>
+        </div>
+        <div class="schedule-list" id="schedule-list"></div>
+      </section>
+
+      <section class="panel" data-panel="standings" hidden aria-labelledby="standings-title">
+        <h2 id="standings-title" class="section-title">Standings</h2>
+        <div id="standings-root"></div>
+      </section>
+
+      <section class="panel" data-panel="teams" hidden aria-labelledby="teams-title">
+        <h2 id="teams-title" class="section-title">Teams</h2>
+        <div id="teams-root"></div>
+      </section>
+
+      <section class="panel" data-panel="projections" hidden aria-labelledby="projections-title">
+        <h2 id="projections-title" class="section-title">Projections &amp; Predictions</h2>
+        <p class="subline" id="projections-meta"></p>
+        <button type="button" class="road-tile" id="road-tile">
+          <span class="featured-flag">Bracket</span>
+          <span class="road-tile-copy" id="road-tile-copy">Click to update the bracket.</span>
+        </button>
+        <div id="road-home-root" hidden></div>
+        <div id="projections-root"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p id="data-status">Loading the league schedule…</p>
+    </footer>
+  </div>
+  <div id="road-overlay" class="road-overlay" hidden>
+    <div class="road-sheet" role="dialog" aria-modal="true" aria-labelledby="road-title">
+      <div class="road-top">
+        <div>
+          <p class="featured-flag" id="road-flag">Projected</p>
+          <h2 id="road-title">Road to the Super Bowl</h2>
+          <p class="road-path" id="road-path">32 teams → 8 divisions → 14 playoff teams → conference champions → Super Bowl champion</p>
+          <p id="road-meta"></p>
+        </div>
+        <button type="button" class="road-close" data-road-close>Close</button>
+      </div>
+      <div id="road-controls" class="road-controls"></div>
+      <div id="road-root"></div>
+    </div>
+  </div>
+  <noscript>This game day board needs JavaScript enabled in the browser.</noscript>
+  <script src="js/season.js?v=4"></script>
+  <script src="js/league.js?v=4"></script>
+  <script src="js/predict.js?v=5"></script>
+  <script src="js/app.js?v=13"></script>
+</body>
+</html>
